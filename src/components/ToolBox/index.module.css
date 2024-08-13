@@ -1,0 +1,86 @@
+.container {
+    position: absolute;
+    top: 50%;
+    left: 1.25rem; /* 5 / 4 = 1.25rem */
+    font-size: 0.875rem; /* text-sm */
+    border: 1px solid #cbd5e0; /* border-gray-400 */
+    transform: translateY(-50%);
+    box-shadow: 1px 0 10px rgba(0, 0, 0, 0.2);
+    /* z-index: 999; */
+  }
+  
+  .selectOptionContainer {
+    margin-bottom: 1.5rem; /* mb-6 */
+    padding-top: 1.25rem; /* first:pt-5 */
+    padding-bottom: 1.25rem; /* last:pb-5 */
+    padding-left: 1rem; /* px-4 */
+    padding-right: 1rem; /* px-4 */
+  }
+  
+  .selectOptionContainer:last-child {
+    margin-bottom: 0; /* last:mb-0 */
+  }
+  
+  .selectOptionContainer:first-child {
+    padding-top: 1.25rem; /* first:pt-5 */
+  }
+  
+  .selectOptionContainer:last-child {
+    padding-bottom: 1.25rem; /* last:pb-5 */
+  }
+  
+  .toolBoxLabel {
+    display: block; /* block */
+    margin-bottom: 0.25rem; /* mb-1 */
+  }
+  
+  .colorsContainer {
+    display: flex; /* flex */
+    flex-wrap: wrap; /* flex-wrap */
+    align-items: center; /* items-center */
+  }
+  
+  .colorBox {
+    display: inline-block; /* inline-block */
+    width: 1.25rem; /* w-5 */
+    height: 1.25rem; /* h-5 */
+    border-radius: 0.125rem; /* rounded */
+    margin-right: 0.25rem; /* mr-1 */
+  }
+  
+  .colorBox:last-child {
+    margin-right: 0; /* last:mr-0 */
+  }
+  
+  .noFillColorBox {
+    background: linear-gradient(
+        to top left,
+        rgba(255, 0, 0, 0) 0%,
+        rgba(255, 0, 0, 0) calc(50% - 0.8px),
+        rgba(255, 0, 0, 1) 50%,
+        rgba(255, 0, 0, 0) calc(50% + 0.8px),
+        rgba(255, 0, 0, 0) 100%
+      ),
+      linear-gradient(
+        to top right,
+        rgba(255, 0, 0, 0) 0%,
+        rgba(255, 0, 0, 0) calc(50% - 0.8px),
+        rgba(255, 0, 0, 1) 50%,
+        rgba(255, 0, 0, 0) calc(50% + 0.8px),
+        rgba(255, 0, 0, 0) 100%
+      );
+  }
+  
+  .activeColorBox {
+    border: 1px solid #d1d5db; /* border-gray-300 */
+    box-shadow: 0 0 0 1px #4a47b1;
+  }
+  
+  .colorPicker {
+    margin-right: 1.25rem; /* mr-5 */
+    width: 2.5rem; /* w-10 */
+    height: 2.5rem; /* h-10 */
+    border-radius: 0.125rem; /* rounded */
+    border: 2px solid #9ca3af; /* border-neutral-400 */
+  }
+  
